@@ -52,3 +52,55 @@
   .food-card img{height:250px}
   .hero-badge{width:125px}
 }
+
+
+/* Mobile hero correction: show the actual full stall instead of a narrow blurred crop */
+@media(max-width:620px){
+  .hero{
+    height:auto;
+    min-height:0;
+    background:#1b120d;
+  }
+  .hero-media{
+    position:relative;
+    inset:auto;
+    width:100%;
+    height:235px;
+    padding-top:72px;
+    background:#1b120d;
+    overflow:hidden;
+  }
+  .hero-media img{
+    width:100%;
+    height:163px;
+    object-fit:contain;
+    object-position:center center;
+    transform:none;
+    background:#1b120d;
+  }
+  .hero-overlay{
+    position:absolute;
+    inset:72px 0 auto 0;
+    height:163px;
+    background:linear-gradient(180deg,rgba(18,11,7,.06),rgba(18,11,7,.20));
+    pointer-events:none;
+  }
+  .hero-inner{
+    height:auto;
+    display:block;
+    padding-top:30px;
+    padding-bottom:58px;
+  }
+  .hero-badge{
+    display:none;
+  }
+  .hero h1{
+    font-size:clamp(3.55rem,15vw,5.25rem);
+  }
+  .hero-lead{
+    margin-top:23px;
+  }
+  .brand img{
+    display:none;
+  }
+}
