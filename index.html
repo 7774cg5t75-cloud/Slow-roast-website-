@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1d140e">
+  <meta name="theme-color" content="#f6eddf">
   <meta name="description" content="Slow Roast — slow-roast rolls, hearty bowls and generous event food served with a friendly welcome.">
   <title>Slow Roast | Slow-roast rolls. Hearty bowls.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,47 +17,62 @@
   <header class="header" id="top">
     <div class="nav-wrap">
       <a class="brand" href="#top" aria-label="Slow Roast home">
-        <img src="assets/logo.webp" alt="">
-        <span><strong>Slow Roast</strong><small>Slow-roast rolls. Hearty bowls.</small></span>
+        <strong>Slow Roast</strong>
+        <small>Slow-roast rolls · hearty bowls</small>
       </a>
       <button class="menu-button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
       <nav id="nav">
         <a href="#food">Our food</a>
         <a href="#events">Events</a>
         <a href="#gallery">Gallery</a>
-        <a class="nav-cta" href="#enquire">Enquire</a>
+        <a class="nav-cta" href="#enquire">Plan your event</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="hero-media" aria-hidden="true">
-        <img src="assets/hero-v2.webp" alt="" fetchpriority="high" decoding="async">
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-inner wrap">
+      <div class="wrap hero-grid">
         <div class="hero-copy rise">
-          <p class="kicker light">Proper food · cooked low & slow</p>
+          <p class="kicker">Proper food · cooked low & slow</p>
           <h1>Slow-roast rolls.<br><em>Hearty bowls.</em></h1>
-          <p class="hero-lead">Generous, slow-cooked food with a friendly welcome — made for busy events, celebrations and hungry crowds.</p>
+          <p class="hero-lead">Generous, slow-cooked food for events, celebrations and hungry crowds — served with a genuinely friendly welcome.</p>
           <div class="actions">
             <a class="btn primary" href="#food">See the food</a>
             <a class="btn secondary" href="#enquire">Plan your event</a>
           </div>
+          <p class="hero-note">Festivals · private events · celebrations</p>
         </div>
-        <div class="hero-badge rise d1">
-          <img src="assets/logo.webp" alt="Slow Roast logo">
-        </div>
+
+        <figure class="hero-photo rise d1">
+          <img src="assets/hero-v2.webp" alt="The full Slow Roast stall set up and serving at an event" fetchpriority="high" decoding="async">
+          <figcaption><strong>Slow Roast in action.</strong> Proper food, friendly service and a stall people can spot across the field.</figcaption>
+        </figure>
       </div>
-      <div class="scroll-cue">Scroll to discover <span>↓</span></div>
     </section>
 
+    <section class="food-first" aria-label="Slow Roast food">
+      <div class="wrap food-first-grid">
+        <div class="food-first-copy rise">
+          <p class="kicker gold">What people come for</p>
+          <h2>Food that looks as good as it smells.</h2>
+          <p>Tender pork, crisp crackling, warm rolls and proper comforting bowls. No tiny portions. No unnecessary fuss.</p>
+        </div>
+        <figure class="food-shot rise d1">
+          <img src="assets/roll.webp" alt="A generously filled Slow Roast pork roll" loading="eager" decoding="async">
+          <figcaption>Slow-roast pork rolls</figcaption>
+        </figure>
+        <figure class="food-shot rise d2">
+          <img src="assets/pork.webp" alt="Slow-roasted pork ready to serve" loading="eager" decoding="async">
+          <figcaption>Slow-cooked, carved generously</figcaption>
+        </figure>
+      </div>
+    </section>
 
     <section class="experience section" id="experience">
       <div class="wrap experience-card rise">
         <div class="experience-media">
-          <img src="assets/hog-feature.webp" alt="Whole hog roasting on the spit at a Slow Roast event" loading="eager" decoding="async">
+          <img src="assets/hog-feature.webp" alt="Whole hog roasting on the spit at a Slow Roast event" loading="lazy" decoding="async">
         </div>
         <div class="experience-copy">
           <p class="kicker gold">The full Slow Roast experience</p>
@@ -151,7 +166,7 @@
           <p class="kicker gold">Let's feed some people</p>
           <h2>Planning an event?</h2>
           <p class="lead">Tell us what you're organising, where it is and roughly how many people you need to feed. We can take it from there.</p>
-          <img src="assets/logo.webp" alt="" aria-hidden="true">
+          <div class="enquire-brand" aria-hidden="true">Slow Roast</div>
         </div>
         <form class="form rise d1" id="form">
           <div class="two">
