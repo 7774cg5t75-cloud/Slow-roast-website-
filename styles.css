@@ -223,7 +223,17 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
   .food-shot img{height:245px;min-height:245px}
   .experience{padding:24px 0 62px}
   .experience-card{border-radius:22px}
-  .experience-media,.experience-media img{height:320px;min-height:320px}
+  .experience-media{
+    height:auto;
+    min-height:0;
+  }
+  .experience-media img{
+    width:100%;
+    height:auto;
+    min-height:0;
+    object-fit:contain;
+    object-position:center;
+  }
   .experience-copy{padding:28px 23px 32px}
   .experience-copy h2{font-size:clamp(2.65rem,13vw,3.9rem)}
   .intro-grid h2,.event-copy h2{font-size:clamp(2.8rem,14vw,4.5rem)}
