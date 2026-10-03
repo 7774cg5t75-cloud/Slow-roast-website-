@@ -206,7 +206,14 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
   .btn{width:100%;min-height:50px;padding:0 15px}
   .hero-note{font-size:.72rem;margin-top:17px}
   .hero-photo{border-radius:22px}
-  .hero-photo img{aspect-ratio:4/3;object-fit:cover;object-position:center 52%}
+  .hero-photo img{
+    width:100%;
+    height:auto;
+    aspect-ratio:auto;
+    object-fit:contain;
+    object-position:center;
+    background:#d8c4ad;
+  }
   .hero-photo figcaption{position:static;border-radius:0;background:#fff8ef;padding:13px 15px;box-shadow:none}
   .food-first{padding:28px 0 58px}
   .food-first-grid{grid-template-columns:1fr;gap:14px}
