@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6eddf">
-  <meta name="description" content="Slow Roast — slow-roast rolls, hearty bowls and generous event food served with a friendly welcome.">
+  <meta name="description" content="Slow Roast — slow-roast pork rolls, hearty bowls and generous event food served with a friendly welcome.">
   <title>Slow Roast | Slow-roast rolls. Hearty bowls.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,9 @@
         <strong>Slow Roast</strong>
         <small>Slow-roast rolls · hearty bowls</small>
       </a>
-      <button class="menu-button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="menu-button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
       <nav id="nav">
         <a href="#food">Our food</a>
         <a href="#events">Events</a>
@@ -36,7 +38,7 @@
         <div class="hero-copy rise">
           <p class="kicker">Proper food · cooked low & slow</p>
           <h1>Slow-roast rolls.<br><em>Hearty bowls.</em></h1>
-          <p class="hero-lead">Generous, slow-cooked food for events, celebrations and hungry crowds — served with a genuinely friendly welcome.</p>
+          <p class="hero-lead">Generous, slow-cooked food for festivals, events and celebrations — served from a stall with plenty of character and a genuinely friendly welcome.</p>
           <div class="actions">
             <a class="btn primary" href="#food">See the food</a>
             <a class="btn secondary" href="#enquire">Plan your event</a>
@@ -45,39 +47,38 @@
         </div>
 
         <figure class="hero-photo rise d1">
-          <img src="assets/hero-v2.webp" alt="The full Slow Roast stall set up and serving at an event" fetchpriority="high" decoding="async">
-          <figcaption><strong>Slow Roast in action.</strong> Proper food, friendly service and a stall people can spot across the field.</figcaption>
+          <img src="assets/daytime-stall.avif" alt="The Slow Roast stall set up in daylight at an outdoor event" fetchpriority="high" decoding="async">
         </figure>
       </div>
     </section>
 
-    <section class="food-first" aria-label="Slow Roast food">
-      <div class="wrap food-first-grid">
-        <div class="food-first-copy rise">
-          <p class="kicker gold">What people come for</p>
-          <h2>Food that looks as good as it smells.</h2>
+    <section class="food-showcase" aria-labelledby="food-showcase-title">
+      <div class="wrap food-showcase-heading rise">
+        <p class="kicker gold">What people come for</p>
+        <div class="food-heading-row">
+          <h2 id="food-showcase-title">Food that looks as good as it smells.</h2>
           <p>Tender pork, crisp crackling and proper comforting food. No tiny portions. No unnecessary fuss.</p>
         </div>
-        <figure class="food-shot roast-shot rise d1">
-          <img src="assets/hog-feature.webp" alt="Whole hog roasting on the spit at a Slow Roast event" loading="eager" decoding="async">
+      </div>
+
+      <div class="wrap food-visuals">
+        <figure class="food-figure roast-figure rise">
+          <img src="assets/hog-feature.webp" alt="A whole hog slow-roasting on the spit" loading="eager" decoding="async">
           <figcaption>The full roast</figcaption>
         </figure>
-        <figure class="food-shot rise d2">
-          <img src="assets/pork.webp" alt="Slow-cooked pork ready to serve in a tray" loading="eager" decoding="async">
-          <figcaption>Slow-cooked, carved generously</figcaption>
+        <figure class="food-figure pork-figure rise d1">
+          <img src="assets/pork.webp" alt="Tender slow-cooked pork ready to serve" loading="eager" decoding="async">
+          <figcaption>Slow-cooked until it falls off the bone</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="experience section" id="experience">
-      <div class="wrap experience-card rise">
-        <div class="experience-media">
-          <img src="assets/hog-feature.webp" alt="Whole hog roasting on the spit at a Slow Roast event" loading="lazy" decoding="async">
-        </div>
-        <div class="experience-copy">
-          <p class="kicker gold">The full Slow Roast experience</p>
+    <section class="experience">
+      <div class="wrap experience-inner rise">
+        <p class="kicker gold">The full Slow Roast experience</p>
+        <div class="experience-grid">
           <h2>The roast is part of the show.</h2>
-          <p class="lead">The sight, smell and theatre of the roast are part of what makes Slow Roast memorable — cooked slowly, carved generously and served to a hungry crowd.</p>
+          <p>The sight, smell and theatre of a whole hog roasting are part of what makes Slow Roast memorable — cooked patiently, pulled when beautifully tender and served to a hungry crowd.</p>
         </div>
       </div>
     </section>
@@ -93,6 +94,7 @@
           <p>We keep things hearty, welcoming and straightforward. Great ingredients, patient cooking and generous portions — served with a smile.</p>
         </div>
       </div>
+
       <div class="wrap values rise d2">
         <article><span>01</span><h3>Low & slow</h3><p>Time does the hard work for tender, flavour-packed food.</p></article>
         <article><span>02</span><h3>Proper portions</h3><p>Generous food made for hungry people and busy days.</p></article>
@@ -100,33 +102,50 @@
       </div>
     </section>
 
-    <section class="food section" id="food">
-      <div class="wrap heading-row rise">
-        <div><p class="kicker gold">What we serve</p><h2>Food worth queueing for.</h2></div>
-        <p>Simple favourites, properly done. Slow-roasted, generously filled and built for big appetites.</p>
-      </div>
-      <div class="wrap food-grid">
-        <article class="food-card rise">
-          <img src="assets/roll.webp" alt="A generously filled slow-roast pork roll" loading="lazy">
-          <div class="food-copy"><span>01</span><h3>Slow-roast pork rolls</h3><p>Tender slow-roasted pork piled into a warm roll, finished with proper crackling and apple sauce.</p></div>
-        </article>
-        <article class="food-card rise d1">
-          <img src="assets/pork.webp" alt="Slow-roasted pork ready to serve" loading="lazy">
-          <div class="food-copy"><span>02</span><h3>Hearty bowls</h3><p>Comforting slow-cooked food served hot, filling and full of flavour.</p></div>
-        </article>
+    <section class="menu-section section" id="food">
+      <div class="wrap menu-layout">
+        <figure class="menu-board rise">
+          <img src="assets/menu-board.avif" alt="Hand-painted Slow Roast menu board without fixed prices" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="menu-copy rise d1">
+          <p class="kicker gold">What we serve</p>
+          <h2>Simple favourites.<br>Properly done.</h2>
+          <p class="menu-lead">A focused menu means we can concentrate on doing a few things really well — slowly cooked, generously served and built for big appetites.</p>
+
+          <div class="menu-items">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Slow-roast pork rolls</h3>
+                <p>Locally sourced, slow-roasted pork piled into a warm roll with proper crackling and apple sauce.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>7 bean, chorizo & pulled pork cassoulet</h3>
+                <p>A hearty bowl served with tortilla chips, pitta bread, sour cream and a parsley garnish.</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="menu-note">Menus and prices can vary by event.</p>
+        </div>
       </div>
     </section>
 
     <section class="events section" id="events">
       <div class="wrap event-grid">
-        <div class="event-photo rise">
-          <img src="assets/customers.webp" alt="Customers gathered at the Slow Roast stall" loading="lazy">
-          <p>Made for busy events and big appetites.</p>
-        </div>
+        <figure class="event-photo rise">
+          <img src="assets/hero-v2.webp" alt="The Slow Roast stall lit up at a busy evening event" loading="lazy" decoding="async">
+          <figcaption>Made for busy events and big appetites.</figcaption>
+        </figure>
+
         <div class="event-copy rise d1">
           <p class="kicker">Bring Slow Roast to your event</p>
           <h2>Friendly service.<br>Serious comfort food.</h2>
-          <p class="lead">From bustling outdoor events to private celebrations, Slow Roast is built around satisfying food, efficient service and a genuinely friendly atmosphere.</p>
+          <p class="lead">From bustling festivals and outdoor events to private celebrations, Slow Roast is built around satisfying food, efficient service and a genuinely friendly atmosphere.</p>
           <ul>
             <li>Festival & event catering</li>
             <li>Private parties & celebrations</li>
@@ -137,26 +156,35 @@
       </div>
     </section>
 
-    <section class="statement">
-      <img src="assets/hero-v2.webp" alt="" aria-hidden="true">
-      <div></div>
-      <div class="wrap statement-copy rise">
+    <section class="promise">
+      <div class="wrap promise-inner rise">
         <p>From first roast to last roll</p>
         <h2>Proper food, cooked with time and served with a smile.</h2>
       </div>
     </section>
 
     <section class="gallery section" id="gallery">
-      <div class="wrap heading-row pale rise">
-        <div><p class="kicker">A look behind the counter</p><h2>Slow Roast in action.</h2></div>
-        <p>Real food, real events and the atmosphere that comes with serving something people can see, smell and look forward to.</p>
+      <div class="wrap gallery-heading rise">
+        <p class="kicker">A look behind the counter</p>
+        <div class="gallery-heading-row">
+          <h2>Slow Roast in action.</h2>
+          <p>Real food, real events and the atmosphere that comes with serving something people can see, smell and look forward to.</p>
+        </div>
       </div>
+
       <div class="wrap gallery-grid">
-        <figure class="tall rise"><img src="assets/pork.webp" alt="Roasted pork close-up" loading="lazy"></figure>
-        <figure class="wide rise d1"><img src="assets/hero-v2.webp" alt="Slow Roast stall at an event" loading="lazy"></figure>
-        <figure class="rise d2"><img src="assets/roll.webp" alt="Finished pork roll" loading="lazy"></figure>
-        <figure class="rise"><img src="assets/customers.webp" alt="Customers at the stall" loading="lazy"></figure>
-        <figure class="rise d1"><img src="assets/hog-feature.webp" alt="Whole hog roasting" loading="lazy"></figure>
+        <figure class="gallery-day rise">
+          <img src="assets/daytime-stall.avif" alt="Slow Roast stall in daylight" loading="lazy" decoding="async">
+        </figure>
+        <figure class="gallery-night rise d1">
+          <img src="assets/hero-v2.webp" alt="Slow Roast stall at night" loading="lazy" decoding="async">
+        </figure>
+        <figure class="gallery-hog rise">
+          <img src="assets/hog-feature.webp" alt="Whole hog roasting on the spit" loading="lazy" decoding="async">
+        </figure>
+        <figure class="gallery-pork rise d1">
+          <img src="assets/pork.webp" alt="Slow-cooked pork ready to serve" loading="lazy" decoding="async">
+        </figure>
       </div>
     </section>
 
@@ -168,6 +196,7 @@
           <p class="lead">Tell us what you're organising, where it is and roughly how many people you need to feed. We can take it from there.</p>
           <div class="enquire-brand" aria-hidden="true">Slow Roast</div>
         </div>
+
         <form class="form rise d1" id="form">
           <div class="two">
             <label>Name<input name="name" required autocomplete="name" placeholder="Your name"></label>
