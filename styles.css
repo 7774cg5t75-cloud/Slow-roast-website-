@@ -68,6 +68,8 @@ h2{font-size:clamp(2.9rem,5.7vw,5.5rem);letter-spacing:-.045em}
 .food-first-copy p:last-child{color:#6f5948;margin:0;max-width:380px}
 .food-shot{margin:0;position:relative;border-radius:24px;overflow:hidden;background:#e7d7c4;min-height:320px;box-shadow:0 16px 42px rgba(55,34,20,.10)}
 .food-shot img{width:100%;height:100%;min-height:320px;object-fit:cover;object-position:center}
+.food-shot.roast-shot{min-height:0}
+.food-shot.roast-shot img{width:100%;height:auto;min-height:0;object-fit:contain;background:#e7d7c4}
 .food-shot figcaption{position:absolute;left:14px;bottom:14px;background:rgba(31,19,11,.84);color:#fff;border-radius:999px;padding:8px 12px;font-size:.72rem;font-weight:700}
 
 /* Experience */
@@ -221,6 +223,8 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
   .food-first-copy h2{font-size:clamp(2.55rem,12vw,3.8rem)}
   .food-shot{min-height:245px;border-radius:20px}
   .food-shot img{height:245px;min-height:245px}
+  .food-shot.roast-shot{min-height:0}
+  .food-shot.roast-shot img{height:auto;min-height:0;object-fit:contain}
   .experience{padding:24px 0 62px}
   .experience-card{border-radius:22px}
   .experience-media{
