@@ -78,6 +78,16 @@ h2{font-size:clamp(3rem,5vw,5.3rem);letter-spacing:-.045em}
 .experience-grid h2{max-width:690px}
 .experience-grid p{margin:0;color:rgba(255,255,255,.7);font-size:1.08rem;line-height:1.75}
 
+
+/* Film */
+.film-section{background:var(--paper);padding-top:96px;padding-bottom:104px}
+.film-heading{margin-bottom:34px}
+.film-heading-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.55fr);gap:60px;align-items:end}
+.film-heading-row h2{max-width:760px}
+.film-heading-row p{margin:0;color:#6f5948;max-width:430px}
+.film-frame{border-radius:28px;overflow:hidden;background:var(--dark);box-shadow:var(--shadow);line-height:0}
+.film-frame video{display:block;width:100%;height:auto;aspect-ratio:910/512;background:#1c120c;object-fit:contain}
+
 /* Philosophy */
 .intro{background:var(--cream)}
 .intro-grid{display:grid;grid-template-columns:1fr .82fr;gap:clamp(50px,8vw,120px);align-items:start}
@@ -189,8 +199,8 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
   .hero-photo{max-width:780px}
   .hero-photo img{width:100%;height:auto}
 
-  .food-heading-row,.gallery-heading-row{grid-template-columns:1fr;gap:18px}
-  .food-heading-row p,.gallery-heading-row p{max-width:700px}
+  .food-heading-row,.gallery-heading-row,.film-heading-row{grid-template-columns:1fr;gap:18px}
+  .food-heading-row p,.gallery-heading-row p,.film-heading-row p{max-width:700px}
   .food-visuals{grid-template-columns:1fr 1fr}
   .roast-figure{grid-column:1/-1}
 
@@ -237,6 +247,10 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
   .pork-figure figcaption{font-size:1rem}
 
   .experience{padding:62px 0}
+  .film-section{padding:64px 0 70px}
+  .film-heading{margin-bottom:24px}
+  .film-heading-row h2{font-size:clamp(2.8rem,13vw,4.1rem)}
+  .film-frame{border-radius:19px}
   .experience-grid h2{font-size:clamp(2.8rem,13vw,4.1rem)}
 
   .intro-grid h2,.event-copy h2{font-size:clamp(2.8rem,14vw,4.5rem)}
