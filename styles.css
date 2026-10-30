@@ -30,7 +30,7 @@ h2{font-size:clamp(3rem,5vw,5.3rem);letter-spacing:-.045em}
 
 /* Header */
 .header{position:sticky;top:0;z-index:100;background:rgba(246,237,223,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(36,23,15,.08);transition:box-shadow .25s,background .25s}
-.header.scrolled{background:rgba(255,250,243,.97);box-shadow:0 8px 28px rgba(40,25,15,.08)}
+.header.scrolled{background:rgba(246,237,223,.97);box-shadow:0 8px 28px rgba(40,25,15,.08)}
 .nav-wrap{width:min(1290px,calc(100% - 40px));height:78px;margin:auto;display:flex;align-items:center;justify-content:space-between}
 .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;line-height:1;min-width:0}
 .brand-logo{display:block;width:62px;height:62px;object-fit:contain;flex:none}
@@ -61,7 +61,7 @@ h2{font-size:clamp(3rem,5vw,5.3rem);letter-spacing:-.045em}
 .hero-photo img{width:100%;height:auto;object-fit:contain}
 
 /* Food showcase */
-.food-showcase{background:var(--paper);padding:82px 0 100px}
+.food-showcase{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 270px);padding:82px 0 100px}
 .food-showcase-heading{margin-bottom:36px}
 .food-heading-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.55fr);gap:clamp(45px,7vw,100px);align-items:end}
 .food-heading-row h2{max-width:760px}
