@@ -32,7 +32,9 @@ h2{font-size:clamp(3rem,5vw,5.3rem);letter-spacing:-.045em}
 .header{position:sticky;top:0;z-index:100;background:rgba(246,237,223,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(36,23,15,.08);transition:box-shadow .25s,background .25s}
 .header.scrolled{background:rgba(255,250,243,.97);box-shadow:0 8px 28px rgba(40,25,15,.08)}
 .nav-wrap{width:min(1290px,calc(100% - 40px));height:78px;margin:auto;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;line-height:1;min-width:0}
+.brand-logo{display:block;width:62px;height:62px;object-fit:contain;flex:none}
+.brand-copy{display:flex;flex-direction:column;min-width:0}
 .brand strong{font-family:var(--serif);font-size:1.55rem;letter-spacing:-.025em}
 .brand small{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#7c6758;margin-top:7px}
 .header nav{display:flex;align-items:center;gap:29px}
@@ -172,7 +174,9 @@ h2{font-size:clamp(3rem,5vw,5.3rem);letter-spacing:-.045em}
 /* Footer */
 footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(255,255,255,.08)}
 .footer-grid{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:30px}
-.footer-grid>div:first-child{display:flex;flex-direction:column}
+.footer-brand{display:flex;flex-direction:row;align-items:center;gap:16px;min-width:0}
+.footer-logo{display:block;width:84px;height:84px;object-fit:contain;flex:none}
+.footer-brand-copy{display:flex;flex-direction:column;min-width:0}
 .footer-grid strong{font-family:var(--serif);font-size:1.3rem}
 .footer-grid span{color:rgba(255,255,255,.5);font-size:.72rem}
 .footer-links{display:flex;gap:19px}
@@ -195,6 +199,7 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
 
 @media(max-width:900px){
   .nav-wrap{height:70px}
+  .brand-logo{width:54px;height:54px}
   .brand small{display:none}
   .menu-button{display:block;z-index:102}
   .header nav{position:fixed;top:0;right:0;width:min(340px,88vw);height:100svh;background:#f7ecdd;flex-direction:column;align-items:flex-start;padding:104px 34px 34px;transform:translateX(100%);transition:.3s;box-shadow:-25px 0 60px rgba(0,0,0,.18)}
@@ -237,7 +242,9 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
   .wrap{width:min(var(--max),calc(100% - 30px))}
   .section{padding:72px 0}
   .nav-wrap{width:calc(100% - 30px)}
-  .brand strong{font-size:1.45rem}
+  .brand{gap:9px}
+  .brand-logo{width:48px;height:48px}
+  .brand strong{font-size:1.37rem}
 
   .hero{padding:34px 0 44px}
   .hero-grid{gap:30px}
