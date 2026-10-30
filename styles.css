@@ -29,13 +29,15 @@ h2{font-size:clamp(3rem,5vw,5.3rem);letter-spacing:-.045em}
 .lead{font-size:1.14rem;line-height:1.7}
 
 /* Header */
-.header{position:sticky;top:0;z-index:100;background:rgba(246,237,223,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(36,23,15,.08);transition:box-shadow .25s,background .25s}
-.header.scrolled{background:rgba(246,237,223,.97);box-shadow:0 8px 28px rgba(40,25,15,.08)}
-.nav-wrap{width:min(1290px,calc(100% - 40px));height:78px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+/* Header and complete hero share the same cream; no colour seam behind the brand. */
+.header{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:0;transition:box-shadow .25s}
+.header.scrolled{background:var(--cream);box-shadow:0 8px 28px rgba(40,25,15,.08)}
+/* Content can grow vertically at large iOS text/zoom sizes instead of crossing the section boundary. */
+.nav-wrap{width:min(1290px,calc(100% - 40px));min-height:78px;height:auto;padding:8px 0;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;line-height:1;min-width:0}
 .brand-logo{display:block;width:62px;height:62px;object-fit:contain;flex:none}
 .brand-copy{display:flex;flex-direction:column;min-width:0}
-.brand strong{font-family:var(--serif);font-size:1.55rem;letter-spacing:-.025em}
+.brand strong{font-family:var(--serif);font-size:1.55rem;letter-spacing:-.025em;line-height:1.12;overflow-wrap:anywhere}
 .brand small{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#7c6758;margin-top:7px}
 .header nav{display:flex;align-items:center;gap:29px}
 .header nav a{text-decoration:none;font-size:.84rem;font-weight:600}
@@ -61,7 +63,8 @@ h2{font-size:clamp(3rem,5vw,5.3rem);letter-spacing:-.045em}
 .hero-photo img{width:100%;height:auto;object-fit:contain}
 
 /* Food showcase */
-.food-showcase{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 270px);padding:82px 0 100px}
+/* Begin the transition only after the full hero, never behind the logo or title. */
+.food-showcase{background:linear-gradient(180deg,var(--cream) 0px,var(--cream) 54px,var(--paper) 320px);padding:82px 0 100px}
 .food-showcase-heading{margin-bottom:36px}
 .food-heading-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.55fr);gap:clamp(45px,7vw,100px);align-items:end}
 .food-heading-row h2{max-width:760px}
@@ -198,10 +201,11 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
 }
 
 @media(max-width:900px){
-  .nav-wrap{height:70px}
+  .nav-wrap{min-height:70px;height:auto;padding:10px 0}
+  .brand{flex:0 1 auto;max-width:calc(100% - 64px)}
   .brand-logo{width:54px;height:54px}
   .brand small{display:none}
-  .menu-button{display:block;z-index:102}
+  .menu-button{display:block;z-index:102;flex:none}
   .header nav{position:fixed;top:0;right:0;width:min(340px,88vw);height:100svh;background:#f7ecdd;flex-direction:column;align-items:flex-start;padding:104px 34px 34px;transform:translateX(100%);transition:.3s;box-shadow:-25px 0 60px rgba(0,0,0,.18)}
   .header nav.open{transform:none}
   .header nav a{font-size:1.15rem}
@@ -244,7 +248,7 @@ footer{background:#100a07;color:#fff;padding:37px 0;border-top:1px solid rgba(25
   .nav-wrap{width:calc(100% - 30px)}
   .brand{gap:9px}
   .brand-logo{width:48px;height:48px}
-  .brand strong{font-size:1.37rem}
+  .brand strong{font-size:clamp(1.05rem,5.2vw,1.37rem)}
 
   .hero{padding:34px 0 44px}
   .hero-grid{gap:30px}
