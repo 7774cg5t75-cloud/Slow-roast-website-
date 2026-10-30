@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,8 +18,11 @@
   <header class="header" id="top">
     <div class="nav-wrap">
       <a class="brand" href="#top" aria-label="Slow Roast home">
-        <strong>Slow Roast</strong>
-        <small>Slow-roast rolls · hearty bowls</small>
+        <img class="brand-logo" src="assets/logo.webp" alt="" width="62" height="62" decoding="async">
+        <span class="brand-copy">
+          <strong>Slow Roast</strong>
+          <small>Slow-roast rolls · hearty bowls</small>
+        </span>
       </a>
       <button class="menu-button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -255,7 +259,7 @@
 
   <footer>
     <div class="wrap footer-grid">
-      <div><strong>Slow Roast</strong><span>Slow-roast rolls. Hearty bowls.</span><a href="mailto:hello@slowroast.co.uk">hello@slowroast.co.uk</a></div>
+      <div class="footer-brand"><img class="footer-logo" src="assets/logo.webp" alt="" width="84" height="84" loading="lazy" decoding="async"><div class="footer-brand-copy"><strong>Slow Roast</strong><span>Slow-roast rolls. Hearty bowls.</span><a href="mailto:hello@slowroast.co.uk">hello@slowroast.co.uk</a></div></div>
       <div class="footer-links"><a href="#food">Food</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#enquire">Enquire</a><a href="https://www.instagram.com/slowroastfood/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/share/18s4GQ2XGF/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></div>
       <p>© <span id="year"></span> Slow Roast</p>
     </div>
